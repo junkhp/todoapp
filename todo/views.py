@@ -66,13 +66,12 @@ def task_status_move(request, pk):
 class TodoCreateView(View):
     def get(self, request, *args, **kwargs):
         """GETリクエスト用のメソッド"""
-        # すでにログインしている場合はショップ画面へリダイレクト
 
         context = {
             'form': CreateForm(),
         }
         # ログイン画面用のテンプレートに値が空のフォームをレンダリング
-        return render(request, 'todo/create2.html', context)
+        return render(request, 'todo/create.html', context)
 
     def post(self, request, *args, **kwargs):
         """POSTリクエスト用のメソッド"""
