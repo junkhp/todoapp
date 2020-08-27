@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todo',
     "bootstrap4",
-    'bootstrap_datepicker_plus',
 
 ]
 

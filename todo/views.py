@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import ToDoModel, HowtoOrder
 from django.urls import reverse_lazy
-from bootstrap_datepicker_plus import DatePickerInput
 from django.views import View
 from .forms import CreateForm, UpdateForm
 from django import forms
