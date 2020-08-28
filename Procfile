@@ -1,1 +1,1 @@
-echo web: gunicorn config.wsgi --log-file - > Procfile
+web: gunicorn config.wsgi --log-file -
