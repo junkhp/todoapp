@@ -71,7 +71,7 @@ class TodoCreateView(View):
             'form': CreateForm(),
         }
         # ログイン画面用のテンプレートに値が空のフォームをレンダリング
-        return render(request, 'todo/create.html', context)
+        return render(request, 'todo/create2.html', context)
 
     def post(self, request, *args, **kwargs):
         """POSTリクエスト用のメソッド"""
@@ -88,7 +88,7 @@ class TodoUpdateView(View):
             'form': UpdateForm(instance=task),
         }
         # ログイン画面用のテンプレートに値が空のフォームをレンダリング
-        return render(request, 'todo/update.html', context)
+        return render(request, 'todo/update2.html', context)
 
     def post(self, request, pk, *args, **kwargs):
         task = ToDoModel.objects.get(pk=pk)
